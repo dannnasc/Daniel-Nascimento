@@ -1,0 +1,46 @@
+Solver command line: ['C:\\gurobi1102\\win64\\bin\\gurobi.bat']
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-06-25
+Read LP format model from file C:\Users\danin\AppData\Local\Temp\tmp04_z0zwb.pyomo.lp
+Reading time = 0.11 seconds
+x1: 16950 rows, 16875 columns, 109375 nonzeros
+Set parameter Cuts to value 1
+Set parameter Presolve to value 1
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Threads to value 6
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (win64 - Windows 11.0 (22631.2))
+
+CPU model: AMD Ryzen 5 4600H with Radeon Graphics, instruction set [SSE2|AVX|AVX2]
+Thread count: 6 physical cores, 12 logical processors, using up to 6 threads
+
+Optimize a model with 16950 rows, 16875 columns and 109375 nonzeros
+Model fingerprint: 0x306f65c5
+Variable types: 625 continuous, 16250 integer (16250 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [7e+00, 7e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 16100 rows and 11400 columns
+Presolve time: 0.14s
+Presolved: 850 rows, 5475 columns, 21075 nonzeros
+Variable types: 25 continuous, 5450 integer (5450 binary)
+Found heuristic solution: objective 1246.1601802
+
+Root relaxation: objective 6.183299e+02, 750 iterations, 0.01 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     618.3299155  618.32992  0.00%     -    0s
+
+Explored 1 nodes (750 simplex iterations) in 0.18 seconds (0.20 work units)
+Thread count was 6 (of 12 available processors)
+
+Solution count 2: 618.33 1246.16 
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 6.183299155463e+02, best bound 6.183299155463e+02, gap 0.0000%
+

@@ -1,0 +1,82 @@
+Solver command line: ['C:\\gurobi1102\\win64\\bin\\gurobi.bat']
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-06-25
+Read LP format model from file C:\Users\danin\AppData\Local\Temp\tmp6lh5_uzz.pyomo.lp
+Reading time = 0.13 seconds
+x1: 16974 rows, 16900 columns, 109448 nonzeros
+Set parameter Cuts to value 1
+Set parameter Presolve to value 1
+Set parameter TimeLimit to value 10
+Set parameter Threads to value 6
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (win64 - Windows 11.0 (22631.2))
+
+CPU model: AMD Ryzen 5 4600H with Radeon Graphics, instruction set [SSE2|AVX|AVX2]
+Thread count: 6 physical cores, 12 logical processors, using up to 6 threads
+
+Optimize a model with 16974 rows, 16900 columns and 109448 nonzeros
+Model fingerprint: 0x0744a5ae
+Variable types: 625 continuous, 16275 integer (16275 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [7e+00, 7e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 2774 rows and 1350 columns
+Presolve time: 0.14s
+Presolved: 14200 rows, 15550 columns, 98325 nonzeros
+Variable types: 625 continuous, 14925 integer (14925 binary)
+Found heuristic solution: objective 1246.1601802
+
+Root relaxation: objective 2.774866e+02, 645 iterations, 0.03 seconds (0.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  277.48655    0   51 1246.16018  277.48655  77.7%     -    0s
+H    0     0                     978.9035218  277.48655  71.7%     -    0s
+H    0     0                     917.9218577  277.48655  69.8%     -    0s
+     0     0  277.48655    0  105  917.92186  277.48655  69.8%     -    0s
+H    0     0                     912.3408541  277.48655  69.6%     -    1s
+H    0     0                     862.5539148  277.48655  67.8%     -    1s
+     0     0  277.48655    0  105  862.55391  277.48655  67.8%     -    1s
+H    0     0                     813.7806742  277.48655  65.9%     -    1s
+     0     0  277.48655    0   50  813.78067  277.48655  65.9%     -    1s
+     0     0  277.48655    0   64  813.78067  277.48655  65.9%     -    1s
+H    0     0                     754.2800924  277.48655  63.2%     -    1s
+     0     0  277.48655    0   50  754.28009  277.48655  63.2%     -    1s
+     0     0  277.48655    0   60  754.28009  277.48655  63.2%     -    2s
+H    0     0                     719.1902952  277.48655  61.4%     -    2s
+H    0     0                     550.9671205  278.03415  49.5%     -    2s
+     0     0  278.03415    0   51  550.96712  278.03415  49.5%     -    2s
+     0     0  278.34619    0   51  550.96712  278.34619  49.5%     -    2s
+H    0     2                     529.9821064  282.48655  46.7%     -    2s
+     0     2  282.48655    0   51  529.98211  282.48655  46.7%     -    2s
+H   31    38                     507.0661604  297.92383  41.2%   167    4s
+H   32    38                     496.7688414  297.92383  40.0%   164    4s
+    57    65  303.56994    9   60  496.76884  297.92383  40.0%   125    5s
+H   65    71                     427.0825964  297.92383  30.2%   114    7s
+H   68    71                     425.5426749  297.92383  30.0%   115    7s
+H   76    77                     412.5149186  297.92383  27.8%   109    8s
+   142   143  321.63846   21   73  412.51492  297.92383  27.8%   100   10s
+
+Cutting planes:
+  Learned: 4
+  Lift-and-project: 30
+  Implied bound: 62
+  Clique: 14
+  MIR: 135
+  Zero half: 21
+  RLT: 299
+  Relax-and-lift: 137
+  BQP: 10
+  PSD: 15
+
+Explored 146 nodes (17819 simplex iterations) in 10.03 seconds (9.69 work units)
+Thread count was 6 (of 12 available processors)
+
+Solution count 10: 412.515 425.543 427.083 ... 813.781
+
+Time limit reached
+Best objective 4.125149185594e+02, best bound 2.979238283412e+02, gap 27.7787%
+

@@ -1,0 +1,57 @@
+Solver command line: ['C:\\gurobi1102\\win64\\bin\\gurobi.bat']
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-06-25
+Read LP format model from file C:\Users\danin\AppData\Local\Temp\tmpz0k8ajdf.pyomo.lp
+Reading time = 0.11 seconds
+x1: 16950 rows, 16875 columns, 109375 nonzeros
+Set parameter Cuts to value 1
+Set parameter Presolve to value 1
+Set parameter TimeLimit to value 1800
+Set parameter MIPGap to value 0.01
+Set parameter Threads to value 6
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (win64 - Windows 11.0 (22631.2))
+
+CPU model: AMD Ryzen 5 4600H with Radeon Graphics, instruction set [SSE2|AVX|AVX2]
+Thread count: 6 physical cores, 12 logical processors, using up to 6 threads
+
+Optimize a model with 16950 rows, 16875 columns and 109375 nonzeros
+Model fingerprint: 0xb86e2e0b
+Variable types: 625 continuous, 16250 integer (16250 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Found heuristic solution: objective 927.7808270
+Presolve removed 13275 rows and 7375 columns
+Presolve time: 0.14s
+Presolved: 3675 rows, 9500 columns, 42835 nonzeros
+Variable types: 575 continuous, 8925 integer (8925 binary)
+
+Root relaxation: objective 1.840273e+02, 1032 iterations, 0.04 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  184.02728    0   54  927.78083  184.02728  80.2%     -    0s
+H    0     0                     620.8852720  184.02728  70.4%     -    0s
+H    0     0                     531.5495555  184.02728  65.4%     -    0s
+     0     0  184.02728    0   54  531.54956  184.02728  65.4%     -    0s
+H    0     0                     442.6560845  184.02728  58.4%     -    0s
+     0     0  184.02728    0   54  442.65608  184.02728  58.4%     -    0s
+H    0     0                     221.9381353  184.02728  17.1%     -    0s
+H    0     0                     193.0414573  184.02728  4.67%     -    0s
+     0     0  184.02728    0   54  193.04146  184.02728  4.67%     -    0s
+H    0     0                     191.8136198  184.02728  4.06%     -    0s
+     0     0  184.02728    0   54  191.81362  184.02728  4.06%     -    0s
+     0     0     cutoff    0       191.81362  191.81362  0.00%     -    0s
+
+Explored 1 nodes (3009 simplex iterations) in 0.81 seconds (0.54 work units)
+Thread count was 6 (of 12 available processors)
+
+Solution count 8: 191.814 191.814 193.041 ... 927.781
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 1.918136197787e+02, best bound 1.918136197787e+02, gap 0.0000%
+

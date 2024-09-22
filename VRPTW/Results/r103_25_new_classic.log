@@ -1,0 +1,65 @@
+Solver command line: ['C:\\gurobi1102\\win64\\bin\\gurobi.bat']
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-06-25
+Read LP format model from file C:\Users\danin\AppData\Local\Temp\tmpdv3yno9m.pyomo.lp
+Reading time = 0.12 seconds
+x1: 16950 rows, 16875 columns, 109375 nonzeros
+Set parameter Cuts to value 0
+Set parameter Presolve to value 0
+Set parameter TimeLimit to value 10
+Set parameter Threads to value 6
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (win64 - Windows 11.0 (22631.2))
+
+CPU model: AMD Ryzen 5 4600H with Radeon Graphics, instruction set [SSE2|AVX|AVX2]
+Thread count: 6 physical cores, 12 logical processors, using up to 6 threads
+
+Optimize a model with 16950 rows, 16875 columns and 109375 nonzeros
+Model fingerprint: 0x8d9a3310
+Variable types: 625 continuous, 16250 integer (16250 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [7e+00, 7e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+Found heuristic solution: objective 1183.3243880
+Variable types: 625 continuous, 16250 integer (16250 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.02s
+
+Solved with dual simplex
+
+Root relaxation: objective 3.017110e+02, 955 iterations, 0.12 seconds (0.12 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  301.71102    0   50 1183.32439  301.71102  74.5%     -    0s
+H    0     0                     846.4950455  301.71102  64.4%     -    0s
+     0     0  301.71102    0   50  846.49505  301.71102  64.4%     -    0s
+     0     2  301.82633    0   50  846.49505  301.82633  64.3%     -    0s
+H   31    37                     816.9937626  301.82633  63.1%  72.6    1s
+H   31    37                     756.0828750  301.82633  60.1%  72.6    1s
+H   62    68                     604.2335700  301.82633  50.0%  49.6    2s
+H   65    68                     602.5127987  301.82633  49.9%  47.5    2s
+H   98   100                     558.7971524  301.82633  46.0%  42.2    3s
+H  101   106                     501.7635617  301.82633  39.8%  43.4    4s
+H  106   106                     499.2005818  301.82633  39.5%  45.2    4s
+H  147   145                     493.2161021  301.82633  38.8%  40.7    4s
+   148   160  342.64714   22   56  493.21610  301.82633  38.8%  41.3    5s
+H  181   184                     487.0663659  301.82633  38.0%  36.7    6s
+H  182   184                     484.8299670  301.82633  37.7%  36.7    6s
+H  293   284                     478.0817369  301.82633  36.9%  34.9    9s
+H  300   294                     472.2238725  301.82633  36.1%  34.8    9s
+   326   323  323.81496   40   56  472.22387  301.82633  36.1%  37.0   10s
+
+Explored 339 nodes (13916 simplex iterations) in 10.04 seconds (11.92 work units)
+Thread count was 6 (of 12 available processors)
+
+Solution count 10: 472.224 478.082 484.83 ... 604.234
+
+Time limit reached
+Best objective 4.722238725218e+02, best bound 3.018263338464e+02, gap 36.0841%
+
